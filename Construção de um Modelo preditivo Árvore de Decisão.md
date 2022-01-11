@@ -131,7 +131,7 @@ limpeza e manipulação no conjunto de dados **combinado.csv** que foi gerado co
 
 Procurei identificar cada **Nó** em seus rótulos de forma que seja dispensável entrar em detalhes sobre a função de cada **Nó** do fluxo , no entanto, vale observar que após  o processamento do **Nó** **“Row Filter”** as linhas com valores nulos na coluna **avg_price** são descartadas , já após o processamento do **Nó** **“Column Filter”**  as colunas Userid e UserSessionid  serão retiradas do arquivo , pois elas são desnecessárias  e somente ficarão as restantes e  necessárias para o treinamamento do modelo.<br/>
 
-É importante ressaltar que após os **Nós**  **“Row Filter”**  e **“Column Filter”** serem processados ,  apenas 1411 linhas  seguiram para o **Nó** **"Partitioning"**.
+É importante ressaltar que após os **Nós**  **“Row Filter”**  e **“Column Filter”** serão processados apenas 1411 linhas que seguirão para o **Nó** **"Partitioning"**.
 
 Após a execução do fluxo,  já teremos  a correta classificação do conjunto de dados e as informações  produzidas pelo modelo  necessárias para fazer as devidas recomendações à empresa proprietária do game para tomada de decisão. 
 O **Nó** **“Scorer”** nos dará as informações necessárias sobre o treinamento e o aproveitamento do modelo.<br/>
